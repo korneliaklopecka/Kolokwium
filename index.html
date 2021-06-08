@@ -9,7 +9,7 @@
     <div id="app" >
 
         <div v-for="i in rows" class="contain"> 
-            <div v-for="j in columns" :class="[active == '1,1' && j == i == 1 ? 'cell active' : 'cell']"> 
+            <div v-for="j in columns" :class="[active == '1,1' && j == i == 1 ? 'cell active' : 'cell']" @click="active=[i,j]"> 
                 1             
             </div>
         </div>
