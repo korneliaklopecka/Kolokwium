@@ -9,6 +9,12 @@
     <div id="app">
     {{ message }}
         <div class="cell">1</div>
+        <ul class="kwadrat" v-for="iloscRows in rows">
+            <li v-for="iloscColumns in columns">
+                <div class="cell">1</div>
+            </li>
+        </ul>
+        
     </div>
 
     <script>
@@ -16,8 +22,6 @@
         el: '#app',
         data: {
             message: 'Powodzenia'
-            rows: 10,
-            columns:10,
         }
     })
     </script>
