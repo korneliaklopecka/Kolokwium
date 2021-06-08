@@ -1,20 +1,16 @@
- 
-.cell{
+.cell {
     height: 50px;
     width: 50px;
     background-color: orange;
-    border-color: gray;
+    border: gray;
+    border-style: solid;
     border-width: 1px;
     border-radius: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-.cell .active{
-    background-color: red;
-    color: white;
+    justify-content: center;
 }
 
 .cell2 {
@@ -23,9 +19,13 @@
     justify-content: center;
 }
 
-
 .contain {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.cell.active {
+    background-color: red;
+    color: white;
 }
